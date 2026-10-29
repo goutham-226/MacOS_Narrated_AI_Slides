@@ -1,0 +1,7 @@
+replicate
+python-dotenv
+requests
+term-image
+macos-speech
+opencv-python
+Pillow

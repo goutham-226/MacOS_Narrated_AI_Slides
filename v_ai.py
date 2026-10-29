@@ -7,7 +7,7 @@ from term_image.image import from_file
 import requests
 import os
 
-import cv2
+
 import base64
 from PIL import Image
 from io import BytesIO
@@ -50,7 +50,7 @@ while prompt[y]==' ':
 for i in range(x,y+1):
     test_str = test_str + prompt[i]
 new_prompt = test_str
-print(test_str)
+print('Please Wait while the model processes your request')
 
 LLM = replicate.Client(api_token=api_tkn)
 frst_output=LLM.run("qwen/qwen3-235b-a22b-instruct-2507",
